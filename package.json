@@ -1,0 +1,21 @@
+{
+  "name": "resume-content-generator",
+  "version": "1.0.0",
+  "description": "Local Node.js web app that generates ATS-friendly resume content from a pasted job description.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "resume",
+    "docker"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

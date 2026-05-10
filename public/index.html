@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Content Generator</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Local Resume Builder</p>
+          <h1>Generate ATS-friendly resume content from a job description</h1>
+          <p class="hero-copy">
+            Paste a LinkedIn or company job description on the left. The app
+            will detect common engineering keywords and build structured resume
+            content on the right.
+          </p>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="panel input-panel">
+          <div class="panel-header">
+            <h2>Job Description</h2>
+            <p>Paste the full role description below.</p>
+          </div>
+
+          <label class="sr-only" for="jobDescription">Job Description</label>
+          <textarea
+            id="jobDescription"
+            placeholder="Paste the job description here..."
+          ></textarea>
+
+          <div class="actions">
+            <button id="generateButton" class="primary-button">
+              Generate Resume Content
+            </button>
+            <button id="loadExampleButton" class="secondary-button" type="button">
+              Load Example
+            </button>
+          </div>
+        </section>
+
+        <section class="panel output-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Generated Resume Content</h2>
+              <p>Summary, skills, and four experience entries.</p>
+            </div>
+            <button id="copyButton" class="secondary-button" type="button">
+              Copy Output
+            </button>
+          </div>
+
+          <div id="statusMessage" class="status-message">
+            Paste a job description and click “Generate Resume Content”.
+          </div>
+
+          <div id="output" class="output hidden"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
