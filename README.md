@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Resume Content Generator
 
 A simple local Node.js + Express web application that generates ATS-friendly resume content from a pasted job description.
@@ -116,3 +117,6 @@ Expected behavior:
 - The generator is intentionally rule-based for local use.
 - The output is designed to be a strong starting point, not a final source of truth.
 - You can extend `src/generator.js` with more keywords, resume tracks, or bullet templates later.
+=======
+# resume_builder
+>>>>>>> 3c0b9dbb134aafb3786eaeb25aea0e0869ab592c
